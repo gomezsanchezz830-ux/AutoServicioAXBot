@@ -1,7 +1,8 @@
 from telegram import *
 from telegram.ext import *
+import os
 
-TOKEN = "8906807130:AAEfNnBvsRAcMwQfdgwlZ1dSRt6nofsfD2M"
+TOKEN = os.getenv("8906807130:AAEfNnBvsRAcMwQfdgwlZ1dSRt6nofsfD2M")
 
 async def start(update, context):
     buttons = [
