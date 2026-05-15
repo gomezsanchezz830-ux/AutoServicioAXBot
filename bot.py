@@ -2,8 +2,7 @@ from telegram import *
 from telegram.ext import *
 import os
 
-TOKEN = os.getenv("8906807130:AAEfNnBvsRAcMwQfdgwlZ1dSRt6nofsfD2M")
-
+TOKEN = os.getenv("TOKEN")
 async def start(update, context):
     buttons = [
         [InlineKeyboardButton("➕ Cargar saldo", callback_data="saldo"),
